@@ -39,7 +39,7 @@ $(function() {
       targets: '.art-preloader .art-preloader-content',
       opacity: [0, 1],
       delay: 200,
-      duration: 600,
+      duration: 800,
       easing: 'linear',
       complete: function(anim) {
 
@@ -49,7 +49,7 @@ $(function() {
       targets: '.art-preloader',
       opacity: [1, 0],
       delay: 2200,
-      duration: 400,
+      duration: 600,
       easing: 'linear',
       complete: function(anim) {
         $('.art-preloader').css('display', 'none');
@@ -60,7 +60,7 @@ $(function() {
   var bar = new ProgressBar.Line(preloader, {
     strokeWidth: 1.7,
     easing: 'easeInOut',
-    duration: 1400,
+    duration: 1600,
     delay: 750,
     trailWidth: 1.7,
     svgStyle: {
@@ -78,7 +78,7 @@ $(function() {
   anime({
     targets: '.art-counter-frame',
     opacity: [0, 1],
-    duration: 800,
+    duration: 1000,
     delay: 2300,
     easing: 'linear',
   });
@@ -92,7 +92,7 @@ $(function() {
         $(this).prop('Counter', 0).animate({
           Counter: $(this).text()
         }, {
-          duration: 2000,
+          duration: 2200,
           easing: 'linear',
           step: function(now) {
             $(this).text(Math.ceil(now));
