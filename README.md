@@ -11,3 +11,5 @@ Release_v1.0.0:
 - Configured CI/CD for the Frontend via a GitHub Action.
 - Configured CI/CD for the Backend via a GitHub Action.
 - Created some unit tests to be ran upon GitHub Action workflow trigger
+
+![Website Architecture](https://github.com/AidenOliver1/azure-resume/assets/94108662/138b13c0-0bc6-4e6c-a235-44acbd8e880a)
