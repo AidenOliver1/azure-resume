@@ -8,6 +8,23 @@ Portfolio:  https://themeforest.net/user/millerdigitaldesign/portfolio?ref=Mille
 p.s. I am available for Freelance hire (UI design, web development). mail: miller.themes@gmail.com
 
 ------------------------------------------- */
+const functionApiUrl = "https://func-azureresume-prod.azurewebsites.net/api/GetResourceCounter?code=3oe2Qofxpp_r_s70p-KwV6yTths7oaoi1lF9bfSTuKBoAzFuaIA_CA==";
+const localFunctionApi = 'http://localhost:7071/api/GetResourceCounter';
+
+const getVisitCount = () => {
+    let count = 30;
+    fetch(functionApiUrl).then(response => {
+        return response.json();
+    }).then(response => {
+        console.log("Website called function API.");
+        count = response.count;
+        document.getElementById("counter").innerText = count;
+    }).catch(function(error){
+        console.log(error)
+    });
+    return count;
+}
+
 $(function() {
 
   "use strict";
@@ -38,8 +55,8 @@ $(function() {
     anime({
       targets: '.art-preloader .art-preloader-content',
       opacity: [0, 1],
-      delay: 200,
-      duration: 800,
+      delay: 300,
+      duration: 1200,
       easing: 'linear',
       complete: function(anim) {
 
@@ -48,8 +65,8 @@ $(function() {
     anime({
       targets: '.art-preloader',
       opacity: [1, 0],
-      delay: 2200,
-      duration: 600,
+      delay: 3300,
+      duration: 900,
       easing: 'linear',
       complete: function(anim) {
         $('.art-preloader').css('display', 'none');
@@ -60,8 +77,8 @@ $(function() {
   var bar = new ProgressBar.Line(preloader, {
     strokeWidth: 1.7,
     easing: 'easeInOut',
-    duration: 1600,
-    delay: 750,
+    duration: 2400,
+    delay: 1125,
     trailWidth: 1.7,
     svgStyle: {
       width: '100%',
@@ -742,19 +759,3 @@ window.addEventListener('DOMContentLoaded', (event) => {
     getVisitCount();
 })
 
-const functionApiUrl = "https://func-azureresume-prod.azurewebsites.net/api/GetResourceCounter?code=3oe2Qofxpp_r_s70p-KwV6yTths7oaoi1lF9bfSTuKBoAzFuaIA_CA==";
-const localFunctionApi = 'http://localhost:7071/api/GetResourceCounter';
-
-const getVisitCount = () => {
-    let count = 30;
-    fetch(functionApiUrl).then(response => {
-        return response.json();
-    }).then(response => {
-        console.log("Website called function API.");
-        count = response.count;
-        document.getElementById("counter").innerText = count;
-    }).catch(function(error){
-        console.log(error)
-    });
-    return count;
-}
