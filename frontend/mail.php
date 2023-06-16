@@ -1,7 +1,7 @@
 <?php
 
-$recepient = "your.mail@here.com";
-$sitename = "Arter";
+$recepient = "contact@aidenoliver.au";
+$sitename = "Azure-Hosted Online Portfolio";
 
 $name = trim($_POST["name"]);
 $email = trim($_POST["email"]);
