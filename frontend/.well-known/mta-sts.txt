@@ -1,0 +1,9 @@
+version: STSv1
+
+mode: testing
+
+mx: mail.aidenoliver.au
+
+mx: *.aidenoliver.au
+
+max_age: 806400 
