@@ -1,13 +1,8 @@
-/* -------------------------------------------
+window.addEventListener('DOMContentLoaded', (event) => {
+  getVisitCount();
+})
 
-Name: 		Arter
-Version:  1.0
-Author:		Nazar Miller (millerDigitalDesign)
-Portfolio:  https://themeforest.net/user/millerdigitaldesign/portfolio?ref=MillerDigitalDesign
 
-p.s. I am available for Freelance hire (UI design, web development). mail: miller.themes@gmail.com
-
-------------------------------------------- */
 const functionApiUrl = "https://func-azureresume-prod.azurewebsites.net/api/GetResourceCounter?code=3oe2Qofxpp_r_s70p-KwV6yTths7oaoi1lF9bfSTuKBoAzFuaIA_CA==";
 const localFunctionApi = 'http://localhost:7071/api/GetResourceCounter';
 
@@ -306,7 +301,8 @@ $(function() {
     $.ajax({
       type: "POST",
       url: "mail.php",
-      data: $(this).serialize()
+      data: $(this).serialize(),
+      crossDomain: true
     }).done(function() {
 
       var tl = anime.timeline({
@@ -737,8 +733,4 @@ $(function() {
   })
 
 });
-
-window.addEventListener('DOMContentLoaded', (event) => {
-    getVisitCount();
-})
 
