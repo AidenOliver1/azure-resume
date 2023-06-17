@@ -154,7 +154,7 @@ $(function() {
     }
   });
 
-  bar.animate(.4);
+  bar.animate(.3);
 
 
   var bar = new ProgressBar.Line(lineprog1, {

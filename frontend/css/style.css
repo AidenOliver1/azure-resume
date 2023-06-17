@@ -152,7 +152,7 @@ h6 {
 /* ----- container ----- */
 .container-fluid {
   overflow: hidden;
-  padding: 0 90px;
+  padding: 0 30px;
   position: relative;
 }
 
