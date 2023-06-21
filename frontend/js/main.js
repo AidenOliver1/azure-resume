@@ -302,7 +302,6 @@ $(function() {
       type: "POST",
       url: "mail.php",
       data: $(this).serialize(),
-      crossDomain: true
     }).done(function() {
 
       var tl = anime.timeline({
