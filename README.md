@@ -1,5 +1,4 @@
 # azure-resume
-My Azure Resume
 
 ![Website Architecture](https://github.com/AidenOliver1/azure-resume/assets/94108662/e08e3f1d-6112-433d-aaae-be08b042fb29)
 
