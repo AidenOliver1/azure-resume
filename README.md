@@ -2,6 +2,8 @@
 
 ![Website Architecture](https://github.com/AidenOliver1/azure-resume/assets/94108662/e08e3f1d-6112-433d-aaae-be08b042fb29)
 
+Backend Security: https://www.hardenize.com/report/aidenoliver.au/1687661907
+
 Release_v1.0.0:
 - Configured the Storage Account (v2) to host a static website
 - Created a Cosmos DB for storing ViewerCount data
@@ -32,3 +34,4 @@ Release_v2.0.0:
   - X-Frame-Options
   - X-Content-Type-Options
   - X-XSS-Protection
+- Configured HSTS Preloading at the apex domain level
