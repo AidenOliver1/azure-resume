@@ -519,10 +519,10 @@ app marcup
 
 /* ----- preloader ----- */
 .art-preloader {
-  margin: 15px;
   position: absolute;
   top: 0;
   left: 0;
+  /* width: calc(100vw - 30px); */
   width: calc(100vw - 30px);
   height: calc(100vh - 30px);
   background: #20202a;
